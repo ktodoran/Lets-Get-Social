@@ -60,7 +60,7 @@ const userController = {
       },
 
       // Add Friend to User(From Existing DB)
-      addFriend({ params }, res) {
+      giveFriend({ params }, res) {
         User.findOneAndUpdate(
           { _id: params.id },
           { $addToSet: { friends: params.friendsId } },
@@ -71,7 +71,7 @@ const userController = {
       },
 
       // Remove Friend from List and Count
-      removeFriend({ params }, res) {
+      eraseFriend({ params }, res) {
         User.findOneAndUpdate(
           { _id: params.id },
           { $pull: { friends: params.friendsId } },
