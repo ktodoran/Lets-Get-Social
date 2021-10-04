@@ -72,4 +72,4 @@ const thoughtsController = {
   },
 }
 
-module.export = thoughtController;
+module.export = thoughtsController;
