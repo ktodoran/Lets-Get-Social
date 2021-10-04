@@ -17,4 +17,4 @@ mongoose.set('debug', true);
 
 app.use(require('./routes'));
 
-app.listen(PORT, () => console.log(`We are not live at PORT ${PORT}!`))
+app.listen(PORT, () => console.log(`We are live at PORT ${PORT}!`))
