@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/letsgetsocial', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Lets-Get-Social', {
     useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
